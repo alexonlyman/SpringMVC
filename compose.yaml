@@ -1,0 +1,13 @@
+
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: my_postgres_container
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: testDB
+      POSTGRES_USER: alex_user
+      POSTGRES_PASSWORD: test_password
